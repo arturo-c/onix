@@ -47,7 +47,10 @@ module ONIX
   #   other class can use them
   autoload :SenderIdentifier, "onix/sender_identifier"
   autoload :AddresseeIdentifier, "onix/addressee_identifier"
-  autoload :Header, "onix/header"
+  autoload :Sender, "onix/models/sender"
+  autoload :SenderRepresenter, "onix/representers/sender_representer"
+  autoload :Header, "onix/models/header"
+  autoload :HeaderRepresenter, "onix/representers/header_representer"
   autoload :ProductIdentifier, "onix/product_identifier"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
