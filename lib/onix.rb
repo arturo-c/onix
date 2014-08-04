@@ -53,6 +53,8 @@ module ONIX
   autoload :HeaderRepresenter, "onix/representers/header_representer"
   autoload :ProductIdentifier, "onix/models/product_identifier"
   autoload :ProductIdentifierRepresenter, "onix/representers/product_identifier_representer"
+  autoload :EpubUsageLimit, "onix/models/epub_usage_limit"
+  autoload :EpubUsageLimitRepresenter, "onix/representers/epub_usage_limit_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
