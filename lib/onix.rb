@@ -63,6 +63,8 @@ module ONIX
   autoload :EpubLicenseRepresenter, "onix/representers/epub_license_representer"
   autoload :TitleElement, "onix/models/title_element"
   autoload :TitleElementRepresenter, "onix/representers/title_element_representer"
+  autoload :TitleDetail, "onix/models/title_detail"
+  autoload :TitleDetailRepresenter, "onix/representers/title_detail_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
