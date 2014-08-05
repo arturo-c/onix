@@ -71,6 +71,8 @@ module ONIX
   autoload :LanguageRepresenter, "onix/representers/language_representer"
   autoload :Subject, "onix/models/subject"
   autoload :SubjectRepresenter, "onix/representers/subject_representer"
+  autoload :DescriptiveDetail, "onix/models/descriptive_detail"
+  autoload :DescriptiveDetailRepresenter, "onix/representers/descriptive_detail_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
