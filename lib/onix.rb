@@ -73,6 +73,8 @@ module ONIX
   autoload :SubjectRepresenter, "onix/representers/subject_representer"
   autoload :DescriptiveDetail, "onix/models/descriptive_detail"
   autoload :DescriptiveDetailRepresenter, "onix/representers/descriptive_detail_representer"
+  autoload :ResourceVersionFeature, "onix/models/resource_version_feature"
+  autoload :ResourceVersionFeatureRepresenter, "onix/representers/resource_version_feature_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
