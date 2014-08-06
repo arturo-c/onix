@@ -79,6 +79,8 @@ module ONIX
   autoload :ResourceVersionRepresenter, "onix/representers/resource_version_representer"
   autoload :SupportingResource, "onix/models/supporting_resource"
   autoload :SupportingResourceRepresenter, "onix/representers/supporting_resource_representer"
+  autoload :TextContent, "onix/models/text_content"
+  autoload :TextContentRepresenter, "onix/representers/text_content_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
