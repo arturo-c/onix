@@ -95,6 +95,8 @@ module ONIX
   autoload :PublisherRepresenter, "onix/representers/publisher_representer"
   autoload :ProductContact, "onix/models/product_contact"
   autoload :ProductContactRepresenter, "onix/representers/product_contact_representer"
+  autoload :PublishingDate, "onix/models/publishing_date"
+  autoload :PublishingDateRepresenter, "onix/representers/publishing_date_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
