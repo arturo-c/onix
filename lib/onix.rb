@@ -99,6 +99,8 @@ module ONIX
   autoload :PublishingDateRepresenter, "onix/representers/publishing_date_representer"
   autoload :CopyrightStatement, "onix/models/copyright_statement"
   autoload :CopyrightStatementRepresenter, "onix/representers/copyright_statement_representer"
+  autoload :Territory, "onix/models/territory"
+  autoload :TerritoryRepresenter, "onix/representers/territory_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
