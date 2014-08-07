@@ -89,6 +89,8 @@ module ONIX
   autoload :ImprintRepresenter, "onix/representers/imprint_representer"
   autoload :Website, "onix/models/website"
   autoload :WebsiteRepresenter, "onix/representers/website_representer"
+  autoload :PublisherIdentifier, "onix/models/publisher_identifier"
+  autoload :PublisherIdentifierRepresenter, "onix/representers/publisher_identifier_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
