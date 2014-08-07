@@ -101,6 +101,8 @@ module ONIX
   autoload :CopyrightStatementRepresenter, "onix/representers/copyright_statement_representer"
   autoload :Territory, "onix/models/territory"
   autoload :TerritoryRepresenter, "onix/representers/territory_representer"
+  autoload :SalesRights, "onix/models/sales_rights"
+  autoload :SalesRightsRepresenter, "onix/representers/sales_rights_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
