@@ -97,6 +97,8 @@ module ONIX
   autoload :ProductContactRepresenter, "onix/representers/product_contact_representer"
   autoload :PublishingDate, "onix/models/publishing_date"
   autoload :PublishingDateRepresenter, "onix/representers/publishing_date_representer"
+  autoload :CopyrightStatement, "onix/models/copyright_statement"
+  autoload :CopyrightStatementRepresenter, "onix/representers/copyright_statement_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
