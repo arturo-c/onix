@@ -111,6 +111,8 @@ module ONIX
   autoload :MarketDateRepresenter, "onix/representers/market_date_representer"
   autoload :Market, "onix/models/market"
   autoload :MarketRepresenter, "onix/representers/market_representer"
+  autoload :MarketPublishingDetail, "onix/models/market_publishing_detail"
+  autoload :MarketPublishingDetailRepresenter, "onix/representers/market_publishing_detail_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
