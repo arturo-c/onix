@@ -105,6 +105,8 @@ module ONIX
   autoload :SalesRightsRepresenter, "onix/representers/sales_rights_representer"
   autoload :PublishingDetail, "onix/models/publishing_detail"
   autoload :PublishingDetailRepresenter, "onix/representers/publishing_detail_representer"
+  autoload :PublisherRepresentative, "onix/models/publisher_representative"
+  autoload :PublisherRepresentativeRepresenter, "onix/representers/publisher_representative_representer"
   autoload :Market, "onix/models/market"
   autoload :MarketRepresenter, "onix/representers/market_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
