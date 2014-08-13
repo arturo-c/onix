@@ -113,6 +113,8 @@ module ONIX
   autoload :MarketRepresenter, "onix/representers/market_representer"
   autoload :MarketPublishingDetail, "onix/models/market_publishing_detail"
   autoload :MarketPublishingDetailRepresenter, "onix/representers/market_publishing_detail_representer"
+  autoload :Supplier, "onix/models/supplier"
+  autoload :SupplierRepresenter, "onix/representers/supplier_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
