@@ -15,6 +15,7 @@ module ONIX
     property :epub_technical_protection, as: "EpubTechnicalProtection", render_filter: ::ONIX::Formatters::TWO_DIGITS
     collection :epub_usage_constraint, as: "EpubUsageConstraint", extend: ONIX::EpubUsageConstraintRepresenter, class: ONIX::EpubUsageConstraint
     property :epub_license, as: "EpubLicense", extend: ONIX::EpubLicenseRepresenter, class: ONIX::EpubLicense
+    collection :collection, as: "Collection", extend: ONIX::CollectionRepresenter, class: ONIX::Collection
     collection :title_detail, as: "TitleDetail", extend: ONIX::TitleDetailRepresenter, class: ONIX::TitleDetail
     collection :contributor, as: "Contributor", extend: ONIX::ContributorRepresenter, class: ONIX::Contributor
     property :contributor_statement, as: "ContributorStatement"

@@ -13,6 +13,7 @@ module ONIX
     attribute :epub_technical_protection, Integer # list 144
     attribute :epub_usage_constraint, Array[ONIX::EpubUsageConstraint]
     attribute :epub_license, ONIX::EpubLicense
+    attribute :collection, Array[ONIX::Collection]
     attribute :title_detail, Array[ONIX::TitleDetail]
     attribute :contributor, Array[ONIX::Contributor]
     attribute :contributor_statement, String
