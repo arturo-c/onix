@@ -8,9 +8,9 @@ module ONIX
 
     property :supplier_role, as: "SupplierRole", render_filter: ::ONIX::Formatters::TWO_DIGITS
     property :supplier_name, as: "SupplierName"
-    property :telephone_number, as: "TelephoneNumber"
-    property :fax_number, as: "FaxNumber"
-    property :email_address, as: "EmailAddress"
-    property :website, as: "Website", extend: ONIX::WebsiteRepresenter, class: ONIX::Website
+    collection :telephone_number, as: "TelephoneNumber"
+    collection :fax_number, as: "FaxNumber"
+    collection :email_address, as: "EmailAddress"
+    collection :website, as: "Website", extend: ONIX::WebsiteRepresenter, class: ONIX::Website
   end
 end

@@ -6,10 +6,10 @@ module ONIX
 
     attribute :supplier_role, Integer # list 93
     attribute :supplier_name, String
-    attribute :telephone_number, String
-    attribute :fax_number, String
-    attribute :email_address, String
-    attribute :website, ONIX::Website
+    attribute :telephone_number, Array[String]
+    attribute :fax_number, Array[String]
+    attribute :email_address, Array[String]
+    attribute :website, Array[ONIX::Website]
 
 
     def to_xml
