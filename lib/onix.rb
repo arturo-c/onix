@@ -123,6 +123,8 @@ module ONIX
   autoload :ProductSupplyRepresenter, "onix/representers/product_supply_representer"
   autoload :Collection, "onix/models/collection"
   autoload :CollectionRepresenter, "onix/representers/collection_representer"
+  autoload :Extent, "onix/models/extent"
+  autoload :ExtentRepresenter, "onix/representers/extent_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
