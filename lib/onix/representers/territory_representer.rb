@@ -8,5 +8,7 @@ module ONIX
 
     property :countries_included, as: "CountriesIncluded"
     property :countries_excluded, as: "CountriesExcluded"
+    property :regions_included, as: "RegionsIncluded"
+    property :regions_excluded, as: "RegionsExcluded"
   end
 end
