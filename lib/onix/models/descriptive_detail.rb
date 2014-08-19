@@ -18,7 +18,9 @@ module ONIX
     attribute :contributor, Array[ONIX::Contributor]
     attribute :contributor_statement, String
     attribute :language, Array[ONIX::Language]
+    attribute :extent, Array[ONIX::Extent]
     attribute :subject, Array[ONIX::Subject]
+    attribute :audience, Array[ONIX::Audience]
 
     def to_xml
       DescriptiveDetailRepresenter.new(self).to_xml

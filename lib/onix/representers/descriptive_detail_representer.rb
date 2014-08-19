@@ -20,7 +20,9 @@ module ONIX
     collection :contributor, as: "Contributor", extend: ONIX::ContributorRepresenter, class: ONIX::Contributor
     property :contributor_statement, as: "ContributorStatement"
     collection :language, as: "Language", extend: ONIX::LanguageRepresenter, class: ONIX::Language
+    collection :extent, as: "Extent", extend: ONIX::ExtentRepresenter, class: ONIX::Extent
     collection :subject, as: "Subject", extend: ONIX::SubjectRepresenter, class: ONIX::Subject
+    collection :audience, as: "Audience", extend: ONIX::AudienceRepresenter, class: ONIX::Audience
   end
 end
 
