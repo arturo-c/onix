@@ -125,6 +125,8 @@ module ONIX
   autoload :CollectionRepresenter, "onix/representers/collection_representer"
   autoload :Extent, "onix/models/extent"
   autoload :ExtentRepresenter, "onix/representers/extent_representer"
+  autoload :Audience, "onix/models/audience"
+  autoload :AudienceRepresenter, "onix/representers/audience_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
