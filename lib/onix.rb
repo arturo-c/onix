@@ -127,6 +127,8 @@ module ONIX
   autoload :ExtentRepresenter, "onix/representers/extent_representer"
   autoload :Audience, "onix/models/audience"
   autoload :AudienceRepresenter, "onix/representers/audience_representer"
+  autoload :Product, "onix/models/product"
+  autoload :ProductRepresenter, "onix/representers/product_representer"
   autoload :SeriesIdentifier, "onix/series_identifier"
   autoload :Series, "onix/series"
   autoload :Title, "onix/title"
@@ -138,7 +140,6 @@ module ONIX
   autoload :DiscountCoded, "onix/discount_coded"
   autoload :MarketRepresentation, "onix/market_representation"
   autoload :Measure, "onix/measure"
-  autoload :Product, "onix/product"
   autoload :Reader, "onix/reader"
   autoload :Writer, "onix/writer"
 
