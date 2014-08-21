@@ -6,8 +6,8 @@ module ONIX
 
     attribute :record_reference, String
     attribute :notification_type, Integer # list 1
-    attribute :record_resource_type, Integer # list 3
-    attribute :product_identifiers, Array[ONIX::ProductIdentifier]
+    attribute :record_source_type, Integer # list 3
+    attribute :product_identifier, Array[ONIX::ProductIdentifier]
     attribute :descriptive_detail, ONIX::DescriptiveDetail
     attribute :collateral_detail, ONIX::CollateralDetail
     attribute :publishing_detail, ONIX::PublishingDetail
