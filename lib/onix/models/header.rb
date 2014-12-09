@@ -5,7 +5,7 @@ module ONIX
     include Virtus.model
 
     attribute :sender, ONIX::Sender
-    attribute :send_date_time
+    attribute :sent_date_time
     attribute :default_language_of_text, String #list 74
     attribute :default_price_type, Integer #list 58
     attribute :default_currency_code, String #list 96
