@@ -7,7 +7,7 @@ module ONIX
     attribute :supplier, ONIX::Supplier
     attribute :product_availability, Integer # list 65
     attribute :unpriced_item_type, Integer # list 57
-    attribute :price, ONIX::Price
+    attribute :price, Array[ONIX::Price]
 
     def to_xml
       SupplyDetailRepresenter.new(self).to_xml
