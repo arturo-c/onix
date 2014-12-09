@@ -11,7 +11,7 @@ module ONIX
     property :city_of_publication, as: "CityOfPublication"
     property :country_of_publication, as: "CountryOfPublication"
     collection :product_contact, as: "ProductContact", extend: ONIX::ProductContactRepresenter, class: ONIX::ProductContact
-    property :publishing_status, as: "PublishingStatus"
+    property :publishing_status, as: "PublishingStatus", render_filter: ::ONIX::Formatters::TWO_DIGITS # list 64
     property :publishing_status_note, as: "PublishingStatusNote"
     collection :publishing_date, as: "PublishingDate", extend: ONIX::PublishingDateRepresenter, class: ONIX::PublishingDate
     property :lastest_reprint_number, as: "LatestReprintNumber"
