@@ -143,6 +143,8 @@ module ONIX
   autoload :Measure, "onix/measure"
   autoload :Reader, "onix/reader"
   autoload :Writer, "onix/writer"
+  autoload :Text, "onix/models/text"
+  autoload :TextRepresenter, "onix/representers/text_representer"
 
   # product wrappers
   autoload :SimpleProduct, "onix/simple_product"

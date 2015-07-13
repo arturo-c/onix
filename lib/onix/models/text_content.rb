@@ -6,7 +6,7 @@ module ONIX
 
     attribute :text_type, Integer # list 153
     attribute :content_audience, Integer # list 154
-    attribute :text, String
+    attribute :text, ONIX::Text
     attribute :text_author, String
     attribute :text_source_corporate, String
     attribute :source_title, String
