@@ -56,6 +56,7 @@ module ONIX
   autoload :Contributor, "onix/contributor"
   autoload :Language, "onix/language"
   autoload :Subject, "onix/subject"
+  autoload :SalesRights, "onix/sales_rights"
   autoload :AudienceRange, "onix/audience_range"
   autoload :Imprint, "onix/imprint"
   autoload :Publisher, "onix/publisher"

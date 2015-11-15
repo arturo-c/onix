@@ -19,6 +19,7 @@ module ONIX
     attribute :basic_main_subject
     attribute :bic_main_subject
     attribute :subjects, Array[ONIX::Subject]
+    attribute :sales_rights, Array[ONIX::SalesRights]
     attribute :audience_code
     attribute :audience_ranges, Array[ONIX::AudienceRange]
     attribute :text, Array[ONIX::OtherText]
@@ -72,6 +73,7 @@ module ONIX
     property :basic_main_subject, as: "BASICMainSubject"
     property :bic_main_subject, as: "BICMainSubject"
     collection :subjects, as: "Subject", extend: ONIX::SubjectRepresenter, class: ONIX::Subject
+    collection :sales_rights, as: "SalesRights", extend: ONIX::SalesRightsRepresenter, class: ONIX::SalesRights
     property :audience_code, as: "AudienceCode", render_filter: ::ONIX::Formatters::TWO_DIGITS
     collection :audience_ranges, as: "AudienceRange", extend: ONIX::AudienceRangeRepresenter, class: ONIX::AudienceRange
     collection :text, as: "OtherText", extend: ONIX::OtherTextRepresenter, class: ONIX::OtherText
