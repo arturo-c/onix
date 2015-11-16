@@ -4,6 +4,7 @@ module ONIX
   class Product
     include Virtus.model
 
+    attribute :epub_type
     attribute :record_reference
     attribute :notification_type, Integer
     attribute :product_identifiers, Array[ONIX::ProductIdentifier]
@@ -93,5 +94,6 @@ module ONIX
     property :thickness, as: "Thickness"
     property :weight, as: "Weight"
     property :dimensions, as: "Dimensions"
+    property :epub_type, as: "EpubType"
   end
 end
