@@ -63,6 +63,7 @@ module ONIX
   autoload :OtherText, "onix/other_text"
   autoload :MediaFile, "onix/media_file"
   autoload :SalesRestriction, "onix/sales_restriction"
+  autoload :CountryCode, "onix/country_code"
   autoload :RelatedProduct, "onix/related_product"
   autoload :Stock, "onix/stock"
   autoload :DiscountCoded, "onix/discount_coded"
