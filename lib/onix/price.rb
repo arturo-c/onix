@@ -17,7 +17,7 @@ module ONIX
     attribute :price_effective_from
     attribute :price_effective_until
     attribute :currency_code
-    attribute :countries_included, Array[ONIX::CountryCode]
+    attribute :countries_included, Array
     attribute :territories_included
     attribute :countries_excluded
     attribute :territories_excluded
