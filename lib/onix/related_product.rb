@@ -5,7 +5,7 @@ module ONIX
     include Virtus.model
 
     attribute :relation_code
-    attribute :product_identifiers
+    attribute :product_identifiers, Array[ONIX::ProductIdentifier] 
 
     def to_xml
       RelatedProductRepresenter.new(self).to_xml
