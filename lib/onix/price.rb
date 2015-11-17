@@ -17,10 +17,10 @@ module ONIX
     attribute :price_effective_from
     attribute :price_effective_until
     attribute :currency_code
-    attribute :countries_included, Array
-    attribute :territories_included, Array
-    attribute :countries_excluded, Array
-    attribute :territories_excluded, Array
+    attribute :countries_included, Array[ONIX::CountryCode]
+    attribute :territories_included
+    attribute :countries_excluded
+    attribute :territories_excluded
 
     def to_xml
       PriceRepresenter.new(self).to_xml
