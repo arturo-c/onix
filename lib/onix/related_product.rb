@@ -22,6 +22,6 @@ module ONIX
     self.representation_wrap = :RelatedProduct
 
     property :relation_code, as: "RelationCode", render_filter: ::ONIX::Formatters::TWO_DIGITS
-    collection :product_identifier, , as: "ProductIdentifier", extend: ONIX::RelatedProductRepresenter, class: ONIX::RelatedProduct
+    collection :product_identifier, as: "ProductIdentifier", extend: ONIX::RelatedProductRepresenter, class: ONIX::RelatedProduct
   end
 end
