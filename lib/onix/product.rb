@@ -33,6 +33,7 @@ module ONIX
     attribute :year_first_published, Integer
     attribute :sales_restrictions, Array[ONIX::SalesRestriction]
     attribute :measurements, Array[ONIX::Measure]
+    attribute :related_products, Array[ONIX::RelatedProduct]
     attribute :supply_details, Array[ONIX::SupplyDetail]
     attribute :market_representations, Array[ONIX::MarketRepresentation]
 
@@ -81,6 +82,7 @@ module ONIX
     collection :media_files, as: "MediaFile", extend: ONIX::MediaFileRepresenter, class: ONIX::MediaFile
     collection :imprints, as: "Imprint", extend: ONIX::ImprintRepresenter, class: ONIX::Imprint
     collection :publishers, as: "Publisher", extend: ONIX::PublisherRepresenter, class: ONIX::Publisher
+    collection :related_products, as: "RelatedProduct", extend: ONIX::RelatedProductRepresenter, class: ONIX::RelatedProduct
     property :publishing_status, as: "PublishingStatus", render_filter: ::ONIX::Formatters::TWO_DIGITS
     property :publication_date, as: "PublicationDate", render_filter: ::ONIX::Formatters::YYYYMMDD, parse_filter: ->(value, *context) { Date.parse(value) rescue nil }
     property :copyright_year, as: "CopyrightYear"
