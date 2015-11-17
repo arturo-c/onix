@@ -14,7 +14,13 @@ module ONIX
     attribute :discounts_coded, Array[DiscountCoded]
     attribute :price_status, Integer
     attribute :price_amount, Decimal
+    attribute :price_effective_from
+    attribute :price_effective_until
     attribute :currency_code
+    attribute :countries_included, Array
+    attribute :territories_included, Array
+    attribute :countries_excluded, Array
+    attribute :territories_excluded, Array
 
     def to_xml
       PriceRepresenter.new(self).to_xml
@@ -40,6 +46,12 @@ module ONIX
     collection :discounts_coded, as: "DiscountCoded", extend: ONIX::DiscountCodedRepresenter, class: ONIX::DiscountCoded
     property :price_status, as: "PriceStatus", render_filter: ::ONIX::Formatters::TWO_DIGITS
     property :price_amount, as: "PriceAmount", render_filter: ::ONIX::Formatters::DECIMAL
+    property :price_effective_from, as: "PriceEffectiveFrom"
+    property :price_effective_until, as: "PriceEffectiveUntil"
     property :currency_code, as: "CurrencyCode"
+    property :countries_included, as: "CountryCode"
+    property :territories_included, as: "Territory"
+    property :countries_excluded, as: "CountryExcluded"
+    property :territories_excluded, as: "TerritoryExcluded"
   end
 end

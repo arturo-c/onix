@@ -14,8 +14,9 @@ module ONIX
     attribute :supplier_role, Integer
     attribute :supply_to_country
     attribute :supply_to_territory
-    attribute :availability_status_code, Integer
+    attribute :availability_code, Integer
     attribute :product_availability, Integer
+    attribute :on_sale_date
     attribute :stock, Array[ONIX::Stock]
     attribute :pack_quantity, Integer
     attribute :prices, Array[ONIX::Price]
@@ -44,7 +45,8 @@ module ONIX
     property :supplier_role, as: "SupplierRole", render_filter: ::ONIX::Formatters::TWO_DIGITS
     property :supply_to_country, as: "SupplyToCountry"
     property :supply_to_territory, as: "SupplyToTerritory"
-    property :availability_status_code, as: "AvailabilityStatusCode", render_filter: ::ONIX::Formatters::TWO_DIGITS
+    property :availability_code, as: "AvailabilityCode", render_filter: ::ONIX::Formatters::TWO_DIGITS
+    property :on_sale_date, as: "OnSaleDate"
     property :product_availability, as: "ProductAvailability", render_filter: ::ONIX::Formatters::TWO_DIGITS
     collection :stock, as: "Stock", extend: ONIX::StockRepresenter, class: ONIX::Stock
     property :pack_quantity, as: "PackQuantity"
