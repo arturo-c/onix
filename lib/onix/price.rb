@@ -39,7 +39,7 @@ module ONIX
     property :price_type_code, as: "PriceTypeCode", render_filter: ::ONIX::Formatters::TWO_DIGITS
     property :price_type_qualifier, as: "PriceQualifier", render_filter: ::ONIX::Formatters::TWO_DIGITS
     property :price_type_description, as: "PriceTypeDescription"
-      property :price_per, as: "PricePer", render_filter: ::ONIX::Formatters::TWO_DIGITS
+    property :price_per, as: "PricePer", render_filter: ::ONIX::Formatters::TWO_DIGITS
     property :minimum_order_qty, as: "MinimumOrderQuantity"
     property :class_of_trade, as: "ClassOfTrade"
     property :bic_discount_group_code, as: "BICDiscountGroupCode"
@@ -49,7 +49,7 @@ module ONIX
     property :price_effective_from, as: "PriceEffectiveFrom"
     property :price_effective_until, as: "PriceEffectiveUntil"
     property :currency_code, as: "CurrencyCode"
-    property :countries_included, as: "CountryCode"
+    collection :countries_included, as: "CountryCode"
     property :territories_included, as: "Territory"
     property :countries_excluded, as: "CountryExcluded"
     property :territories_excluded, as: "TerritoryExcluded"
