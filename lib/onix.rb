@@ -40,6 +40,14 @@ module ONIX
       end
     }
 
+    SPACEY = ->(value, *context) {
+      if value.is_a?(String)
+        value.split(' ')
+      else
+        value
+      end
+    }
+
   end
 
   # core files

@@ -18,9 +18,9 @@ module ONIX
     attribute :price_effective_until
     attribute :currency_code
     attribute :countries_included, Array
-    attribute :territories_included
-    attribute :countries_excluded
-    attribute :territories_excluded
+    attribute :territories_included, Array
+    attribute :countries_excluded, Array
+    attribute :territories_excluded, Array
 
     def to_xml
       PriceRepresenter.new(self).to_xml
@@ -50,8 +50,8 @@ module ONIX
     property :price_effective_until, as: "PriceEffectiveUntil"
     property :currency_code, as: "CurrencyCode"
     collection :countries_included, as: "CountryCode"
-    property :territories_included, as: "Territory"
-    property :countries_excluded, as: "CountryExcluded"
-    property :territories_excluded, as: "TerritoryExcluded"
+    collection :territories_included, as: "Territory", render_filter: ::ONIX::Formatters::SPACEY
+    collection :countries_excluded, as: "CountryExcluded", render_filter: ::ONIX::Formatters::SPACEY
+    collection :territories_excluded, as: "TerritoryExcluded", render_filter: ::ONIX::Formatters::SPACEY
   end
 end
